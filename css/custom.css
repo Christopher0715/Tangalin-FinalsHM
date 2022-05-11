@@ -13,39 +13,30 @@ body, html  {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
-#welcome-section >a {
-    padding: 15px 25px;
-    background: rgb(255, 255, 255);
-    border-radius:15px;
-    text-decoration: none;
-    color: #2A363B ;
-}
-.inner {
-    text-align: center;
-    overflow: hidden;
-}
-
-.inner > h1 {
-    font-size: 7vw;
-}
-
-.inner > p {
-    font-size:4vw; 
-    font-style: italic;
-    color:rgb(9, 185, 185);
-}
-.navbar {
+#navbar {
+    position: relative;
     width: 100vw;
-    position:fixed;
-    z-index: 5;
+    z-index: 2;
 }
-
-.nav-link {
-    font-size: 24px;
+#navbar > ul {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #03173C;
+    padding: 20px 0;
 }
-
+#navbar > ul li:first-child {
+    margin-left: 40px;
+}
+#navbar > ul li {
+    margin: 0 20px;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+} 
 #about {
     background-color: bisque;
     width:100%;
@@ -111,4 +102,20 @@ h2, h3, h4 {
 }
 .soft >img{
     width: 100px;
+}
+.inte-container{
+max-width: 1200px;
+margin: auto;
+background: f2f2f2;
+overflow: auto;
+}
+.gallery{
+    margin:5px;
+    boarder:1px solid #ccc
+    float:left;
+    width:390px;v
+}
+.gallery img{
+    width: 100%;
+    height: auto;
 }
