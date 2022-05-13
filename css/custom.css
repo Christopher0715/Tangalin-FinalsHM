@@ -1,14 +1,15 @@
 body, html  {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    width: 100%;
+    height: 100%;
     margin: 0;
-    background-color:#f5f5f5;
     scroll-behavior: smooth;
     font-family:'Radio Canada', sans-serif;
 }
 
 #welcome-section {
-    background-color: #2A363B;
     width:100%;
-    height:100vh;
+    height:100%;
     color:white;
     display: flex;
     align-items: center;
@@ -25,7 +26,8 @@ body, html  {
     position: fixed;
     width: 100%;
     background-color: #03173C;
-    padding: 20px 0;
+    padding: 20px;
+    margin: 0%;
 }
 #navbar > ul li:first-child {
     margin-left: 40px;
@@ -61,15 +63,14 @@ h2, h3, h4 {
     text-align: center;
 }
 .about-body img {
-    width: 200px;   ;
+    width: 200px;
     border-radius: 50%;
 }
-.home-button  {
-    padding: 15px 25px;
-    background: #2A363B;
-    border-radius:15px;
-    text-decoration: none;
-    color: #ffffff ;
+.certi-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .lang-container{
     display:flex;
@@ -103,19 +104,42 @@ h2, h3, h4 {
 .soft >img{
     width: 100px;
 }
-.inte-container{
-max-width: 1200px;
-margin: auto;
-background: f2f2f2;
-overflow: auto;
+.parent-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .gallery{
-    margin:5px;
-    boarder:1px solid #ccc
-    float:left;
-    width:390px;v
+    border:1px solid #ccc;
+    width:390px;
 }
 .gallery img{
     width: 100%;
     height: auto;
+}
+@media only screen and (max-width: 768px) {
+    .parent-container {
+        flex-direction: column;
+    }
+}
+
+.certificate-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gallery{
+    border:1px solid #ccc;
+    width:390px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    .parent-container {
+        flex-direction: column;
+    }
 }
